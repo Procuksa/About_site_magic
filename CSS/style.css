@@ -1,0 +1,24 @@
+body { background-color: black; }
+h1, p { color: white; font-family: "Shantell Sans", cursive; }
+p { font-size: 25px; }
+.plot::after,
+.code::after,
+.image::after {
+  content: ""; /* Очищуємо текстовий контент */
+  width: 32px; /* Зменшений розмір */
+  height: 32px; /* Зменшений розмір */
+  display: inline-block; /* Забезпечує відображення як блочного елемента */
+  background-size: contain; /* Масштабує зображення, щоб воно вміщувалося */
+  background-repeat: no-repeat; /* Забороняє повторення зображення */
+}
+.plot::after {
+  background-image: url(https://i.postimg.cc/gJ5nqvVq/free-icon-scenario-6348720.png);
+}
+
+.code::after {
+  background-image: url(https://i.postimg.cc/bwjSBHKm/free-icon-browser-4248082.png);
+}
+
+.image::after {
+  background-image: url(https://i.postimg.cc/XYcBSBW4/free-icon-pictures-422950.png);
+}
